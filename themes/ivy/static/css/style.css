@@ -22,6 +22,11 @@ body {
   padding: 0;
 }
 
+::selection {
+  background: var(--Accent);
+  color: white;
+}
+
 button, input, select, textarea, label {
   margin: 0;
   padding: 0;
