@@ -1,6 +1,6 @@
 ---
 title: "Ghost City"
-date: 2021/12/18
+date: 2021-12-18
 url: /chemquest/
 categories: 
   - Project
