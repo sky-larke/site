@@ -17,11 +17,8 @@ tags:
 
 **Tools:** Unity
 
-<<<<<<< HEAD
-**Teammate(s):** Clover & [Jack](www.jackburkhardt.com)
-=======
-**Teammate(s):** Clover & [Jack](https://jackburkhardt.com)
->>>>>>> b78e7defca4f4e45308252477b01ebae6a39693b
+**Teammate(s):** Clover & [Jack](https://www.jackburkhardt.com)
+
 
 You play as a character who has been given a chance to redo one day. It won't change the past. But you'll know whether there was something you could done differently, or not.
 	
