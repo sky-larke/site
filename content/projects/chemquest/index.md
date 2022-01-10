@@ -1,7 +1,6 @@
 ---
 title: "ChemQuest"
 date: 2021-06-09
-url: /chemquest/
 featured: true
 categories: 
   - Project
@@ -12,19 +11,20 @@ tags:
   - Art
   - Design
   - Engineering
-thumbnail: chemquest.gif
+thumbnail: multiportrait.png
 ---
-## <img src ="lineup_large.png" alt = "Pixel art lineup of fantasy characters" width = 384>
+<img src ="lineup_large.png" alt = "Pixel art lineup of fantasy characters" width = 384>
 
-**Role:** Engineer & Designer
-
-**Timeline:** 10 weeks from 4/1/21 - 6/9/21
-
-**Tools:** RPGmaker MZ, Procreate
-
-**Teammate(s):** June Hooper, Gabriel Villaroel Narvaez, Natalie Norquist
 
 ChemQuest is a demo of a chemistry-inspired RPG game sponsored by the Design Thinking and Communication Program. Its site is [here](https://sites.google.com/u.northwestern.edu/chemquest/home).
+
+| Role      | Timeline | Tools  |  Team   |
+| --------  | -------- | ------ | ------- |
+| Engineer & Designer | 10 weeks from 4/1/21 - 6/9/21 | RPGmaker MZ, Procreate| June Hooper, Gabriel Villaroel Narvaez, Natalie Norquist |
+
+
+
+
 
 I worked with four other freshman undergraduate engineering students to create a product for our client, 
 Dr. Mitra Hartmann (also from NU). We had a pretty good time, especially when we were able to conduct

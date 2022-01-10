@@ -18,7 +18,7 @@ figurePositionShow: true # Override global value for showing the figure label.
 comment: false # Disable comment if false.
 ---
 
-Hi, I'm Erin, an undergrad at Northwestern University working on getting a BS in Computer Science. My interests mainly lie in user-centered creation, such as UI/UX and game design. 
+
 
 I am currently working on:
 * [Ari](/ari): A visual novel about regret and acceptance.

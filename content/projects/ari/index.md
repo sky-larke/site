@@ -10,6 +10,7 @@ tags:
   - Art
   - Design
 thumbnail: title.png
+featured: true
 ---
 
 
