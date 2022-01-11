@@ -1,4 +1,0 @@
-[submodule "PaperMod"]
-    path = themes/hugo-PaperMod
-    url = ../themes/hugo-PaperMod
-    branch = main
