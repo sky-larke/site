@@ -1,7 +1,6 @@
 ---
 title: "Ari"
 date: 2021-12-18
-url: /ari/
 categories: 
   - Project
   - Ongoing
@@ -11,6 +10,7 @@ tags:
   - Design
 thumbnail: title.png
 featured: true
+ShowToc: false
 ---
 
 

@@ -39,9 +39,6 @@ languages:
                 - name: About
                   url: about/
                   weight: 5
-                - name: Blog
-                  url: "blog"
-                  weigth: 7
                 - name: Projects
                   url: projects
                   weight: 10
