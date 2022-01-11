@@ -1,4 +1,5 @@
 ---
+aliases: projects, posts, showcase, docs
 title: "Projects"
 ---
-This is where all of my ongoing projects are. 
+Here's an organized list of my projects. 
