@@ -73,20 +73,22 @@ params:
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
-    ShowToc: true
+    ShowToc: false
     comments: false
     images: ["papermod-cover.png"]
 
     profileMode:
-        enabled: false
-        title: PaperMod
-        imageUrl: "#"
+        enabled: true
+        title: Erin Park
+        imageUrl: "headshot.png"
         imageTitle: my image
         # imageWidth: 120
         # imageHeight: 120
         buttons:
-            - name: Archives
-              url: archives
+            - name: About
+              url: about
+            - name: Projects
+              url: projects
             - name: Tags
               url: tags
 
@@ -102,7 +104,7 @@ params:
         - name: github
           url: "https://github.com/sky-larke"
         - name: Email
-          url: "erinpark@u.northwestern.edu"
+          url: "mailto:erinpark@u.northwestern.edu"
         - name: LinkedIn
           url: "https://www.linkedin.com/in/erin--park/"
 
@@ -111,9 +113,9 @@ params:
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
 
-    # label:
-    #     text: "Home"
-    #     icon: icon.png
+    label:
+        text: "Home"
+        icon: "/favicon/personal_icon32.png"
     #     iconHeight: 35
 
     # analytics:
@@ -122,9 +124,9 @@ params:
 
     assets:
         favicon: "favicon/favicon.ico"
-        favicon16x16: "favicon/favicon-16x16.png"
-        favicon32x32: "favicon/favicon-32x32.png"
-        apple_touch_icon: "favicon/apple-touch-icon.png"
+        favicon16x16: "favicon/personal_icon16.png"
+        favicon32x32: "favicon/personal_icon32.png"
+        apple_touch_icon: "favicon/personal_icon_apple-touch180.png"
         # safari_pinned_tab: "<link / abs url>"
 
     # cover:

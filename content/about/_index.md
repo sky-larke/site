@@ -5,7 +5,7 @@ author: Erin Park
 date: 2021-12-18
 ---
 
-<img src="self_portrait.png" width = 200px ALIGN="left"><br><br>
+<img src="self_portrait_darkhair.png" width = 200px ALIGN="left"><br><br>
 
 
 I'm currently an undergrad at Northwestern University majoring in Computer Science and aiming to get the Segal Design Certificate. 
