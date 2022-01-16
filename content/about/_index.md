@@ -6,9 +6,7 @@ date: 2021-12-18
 ---
 
 <img src="self_portrait_darkhair.png" width = 200px ALIGN="left"><br><br>
-
-
-I'm currently an undergrad at Northwestern University majoring in Computer Science and aiming to get the Segal Design Certificate. 
+Hello, I’m an undergraduate computer science student at Northwestern University aiming to get the Segal Design Certificate. 
 
 I'm from Seattle, unless you're from Seattle, in which case I am actually from half an hour away. 
 
