@@ -90,10 +90,10 @@ params:
         buttons:
             - name: About
               url: about
-            - name: Projects
-              url: projects
-            - name: Tags
-              url: tags
+            - name: Active
+              url: categories/active
+            - name: Completed
+              url: categories/completed
 
     homeInfoParams:
         Title: "Erin"

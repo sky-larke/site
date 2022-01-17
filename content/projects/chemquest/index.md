@@ -25,7 +25,6 @@ ChemQuest is a demo of a chemistry-inspired RPG game sponsored by the Design Thi
 
 
 
-
 I worked with four other freshman undergraduate engineering students to create a product for our client, 
 Dr. Mitra Hartmann (also from NU). We had a pretty good time, especially when we were able to conduct
 research by playing Paper Mario and use $80 of our budget on RPGmaker MZ. 

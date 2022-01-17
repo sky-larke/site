@@ -1,6 +1,6 @@
 ---
 title: "Ari"
-date: 2021-12-18
+date: 2022-01-16
 categories: 
   - Project
   - Ongoing
@@ -12,6 +12,7 @@ thumbnail: title.png
 featured: true
 ShowToc: false
 ---
+<img src=title.png width =400px>
 
 
 You play as Ari, who has been given a chance to redo one day that she regrets. It won't change the past. But you'll know whether there was something you could done differently, or not.
