@@ -6,7 +6,7 @@ categories:
   - Groupwork
   - Ongoing
 tags:
-  - Game
+  - Game Dev
   - Art
   - Design
 toc: true
@@ -25,4 +25,4 @@ Role      | Timeline | Tools  |  Team   |
 					
 Artistic inspirations include: noir detectives, victorian women's updo hairstyles, and 1920s suits. 
 
-### 01/16/21: Art Dump
+### 01/16/21

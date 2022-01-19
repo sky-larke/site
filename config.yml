@@ -70,7 +70,7 @@ params:
     defaultTheme: auto
     # disableThemeToggle: true
     ShowShareButtons: true
-    ShowReadingTime: true
+    ShowReadingTime: false
     disableSpecial1stPost: true
     displayFullLangName: true
     ShowPostNavLinks: true
@@ -91,7 +91,7 @@ params:
             - name: About
               url: about
             - name: Active
-              url: categories/active
+              url: categories/ongoing
             - name: Completed
               url: categories/completed
 
