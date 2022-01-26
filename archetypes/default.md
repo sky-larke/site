@@ -8,6 +8,7 @@ toc: false # Controls if a table of contents should be generated for first-level
 # menu: main
 usePageBundles: true # Set to true to group assets like images in the same folder as this post.
 comment: false # Disable comment if false.
+thumbnail: ""
 ---
 
 

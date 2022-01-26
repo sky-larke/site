@@ -1,5 +1,5 @@
 ---
-title: "Ari"
+title: "Arien"
 date: 2022-01-16
 categories: 
   - Project

@@ -10,6 +10,7 @@ tags:
   - UI/UX
   - Wireframe
   - Mobile App
+thumbnail: "design-jam/oatmilk/logo.png"
 ---
 <img src="logo.png" width = 300px>
 

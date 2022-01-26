@@ -11,6 +11,7 @@ tags:
   - Wireframe
   - Mobile App
 draft: true
+thumbnail: ""
 ---
 
 
