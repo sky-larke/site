@@ -1,7 +1,7 @@
 baseURL: "https://www.erinpark.org"
 title: Erin Park
 paginate: 5
-theme: hugo-PaperMod
+theme: passerine
 
 enableInlineShortcodes: true
 enableRobotsTXT: true

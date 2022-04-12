@@ -4,7 +4,7 @@ date: 2022-01-30
 categories: 
   - Project
   - Groupwork
-  - Ongoing
+  - Finished
 tags:
   - Game Dev
   - Art

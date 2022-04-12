@@ -4,7 +4,7 @@ date: 2022-01-16
 categories: 
   - Project
   - Groupwork
-  - Ongoing
+  - Discontinued
 tags:
   - Game Dev
   - Art
@@ -26,4 +26,3 @@ Role      | Timeline | Tools  |  Team   |
 					
 Artistic inspirations include: noir detectives, victorian women's updo hairstyles, and 1920s suits. 
 
-### 01/16/21
