@@ -5,5 +5,6 @@ categories:
   - Project
   - Ongoing
 tags:
+draft: true
 ---
 This site itself is a project in itself. 

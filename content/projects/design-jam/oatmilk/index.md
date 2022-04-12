@@ -60,4 +60,4 @@ This one shows our filter overlay for search, with a demonstration of which filt
 
 This was my first time participating in an Adobe design jam. I enjoyed the timed nature of it. 2 weeks was actually rather long, and I think I did not manage my time as well as I could have. I actually had the worst sleep schedule that I'd ever had in my life during this design jam, and the repercussions of that lasted quite a while, but it was very enjoyable to participate in a timed design project like this. 
 
-Based upon my experience with this, I actually chose to participate in another one month later. When I finish that writeup, the link will be here. 
+Based upon my experience with this, I actually chose to participate in another one month later. When I finish that writeup, the link will be here.
