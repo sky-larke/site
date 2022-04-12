@@ -8,25 +8,25 @@
     --radius: 8px;
     --theme: rgb(255, 255, 255);
     --entry: rgb(255, 255, 255);
-    --primary: rgb(30, 30, 30);
-    --secondary: rgb(108, 108, 108);
-    --tertiary: rgb(214, 214, 214);
-    --content: rgb(31, 31, 31);
-    --hljs-bg: rgb(28, 29, 33);
+    --primary: #534c84;
+    --secondary: #5d90ae;
+    --tertiary: #f6c6d1;
+    --content: #534c84;
+    --hljs-bg: #534c84;
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
 }
 
 .dark {
-    --theme: rgb(29, 30, 32);
+    --theme: #38354e;
     --entry: rgb(46, 46, 51);
     --primary: rgb(218, 218, 219);
     --secondary: rgb(155, 156, 157);
-    --tertiary: rgb(65, 66, 68);
+    --tertiary: #534c84;
     --content: rgb(196, 196, 197);
-    --hljs-bg: rgb(46, 46, 51);
-    --code-bg: rgb(55, 56, 62);
-    --border: rgb(51, 51, 51);
+    --hljs-bg: #534c84;
+    --code-bg: #534c84;
+    --border: #534c84;
 }
 
 .list {
