@@ -31,7 +31,7 @@ I did some visual design stuff with matching animation to 2D movement control in
 The way that we formatted this was that the player collects notes, which turn into motifs, which become themes, which eventually leads to the player doing an entire song after they collect everything. 
 
 **Sketches for theme sprites**
-<img src = "Theme_Visuals.png" height = 500>
+<img src = "Theme_Visual.png" height = 500>
 <img src = "Theme_Brainstorm.png" height = 500>
 
 **Actual theme sprites**
