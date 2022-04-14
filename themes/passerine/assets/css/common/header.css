@@ -70,9 +70,20 @@ body:not(.dark) #sun {
 }
 
 #menu .active {
-    font-weight: 500;
-    border-bottom: 2px solid currentColor;
+    font-weight: 600;
+    border-bottom:2px solid var(--hl);
+    
 }
+
+#menu a:hover {
+    color: var(--secondary);
+}
+
+
+
+
+
+
 
 .lang-switch li,
 .lang-switch ul,

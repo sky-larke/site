@@ -8,7 +8,8 @@
 }
 
 #searchbox input:focus {
-    border-color: var(--secondary);
+    background-color: var(--theme);
+    border-color: var(--tertiary);
 }
 
 #searchResults li {
@@ -43,3 +44,4 @@
     transform: scale(0.98);
     border: 2px solid var(--tertiary);
 }
+

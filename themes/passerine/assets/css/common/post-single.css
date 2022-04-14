@@ -71,7 +71,12 @@
 
 .post-content a,
 .toc a:hover {
-    box-shadow: 0 1px 0;
+    border-bottom:2px solid var(--hl);
+    position: relative;
+}
+
+.post-content a:hover {
+    color: var(--secondary);
 }
 
 .post-content a code {

@@ -71,6 +71,8 @@ a {
     text-decoration: none;
 }
 
+
+
 body,
 figure,
 ul {
@@ -136,3 +138,5 @@ img {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--secondary);
 }
+
+

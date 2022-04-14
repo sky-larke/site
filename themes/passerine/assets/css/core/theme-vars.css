@@ -7,26 +7,29 @@
     --footer-height: 60px;
     --radius: 8px;
     --theme: rgb(255, 255, 255);
-    --entry: rgb(255, 255, 255);
+    --entry: #e4e3e9;
     --primary: #534c84;
     --secondary: #5d90ae;
-    --tertiary: #f6c6d1;
-    --content: #534c84;
+    --tertiary: #dcd6dd;
+    --content: #676097;
     --hljs-bg: #534c84;
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
+    --hl: #e4747d;
+
 }
 
 .dark {
     --theme: #38354e;
-    --entry: rgb(46, 46, 51);
-    --primary: rgb(218, 218, 219);
-    --secondary: rgb(155, 156, 157);
-    --tertiary: #534c84;
+    --entry: rgb(86, 86, 117);
+    --primary: #e9e0d8;
+    --secondary: #8cafce;
+    --tertiary: #5c5876;
     --content: rgb(196, 196, 197);
-    --hljs-bg: #534c84;
-    --code-bg: #534c84;
-    --border: #534c84;
+    --hljs-bg: #5c5876;
+    --code-bg: #5c5876;
+    --border: #625c86;
+    --hl:#e4747d;
 }
 
 .list {

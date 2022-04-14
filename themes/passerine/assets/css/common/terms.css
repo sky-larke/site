@@ -16,3 +16,8 @@
     background: var(--tertiary);
     transform: scale(0.96);
 }
+
+.terms-tags a:hover {
+    background-color: var(--primary);
+    color: var(--tertiary);
+}
