@@ -10,6 +10,7 @@ tags:
   - Art
   - Design
 draft: false
+thumbnail: thumbnails/Songly_Walk.gif
 ---
 <img src = "Songly_Promo-export.gif" description = "Small blob wearing a backpack yoinks a music note. Logo that reads 'Songly' drops down from above, and then disappears. The note grows back like a plant; this gif is a loop.">
 This project was a 5 hr game jam project with 5 members, including myself and Aspen, who I am currently working on Overture Games with (partially as a result of this game jam). The game jam was hosted by NU's PIE organization.

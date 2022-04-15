@@ -37,6 +37,10 @@
     font-weight: 400;
 }
 
+.archive-entry:hover {
+    color: var(--secondary);
+}
+
 .archive-count,
 .archive-meta {
     color: var(--secondary);
