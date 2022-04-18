@@ -40,6 +40,10 @@
     width: 26px;
 }
 
+svg:hover {
+    color: var(--secondary)
+}
+
 code {
     direction: ltr;
 }
