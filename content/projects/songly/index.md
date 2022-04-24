@@ -17,12 +17,15 @@ This project was a 5 hr game jam project with 5 members, including myself and As
 
 Aspen had a really nice design document that I will be blatantly stealing from here. Assume that there are implied citations to it. 
 
-Controls: Keyboard & mouse controls () 
+Controls: Keyboard & mouse controls  
 Aesthetics: Cute, Exploration, Sensation, Challenge, Learning
 Players: 1
 
 # Gameplay
 > As Songly traverses the board they collect musical objects and put them in their backpack. The backpack can fit five objects. The musical objects spawn randomly on the game board based on the level and goal. If Songly collects all of the objects in the correct order based on the goal and presses spacebar the music of the goal plays and then they win that level. 
+
+<img src = "brainstorm.png" height = 500>
+Here's a bit of an example from our document for the goal of the game. 
 
 I did some visual design stuff with matching animation to 2D movement control in Unity, and some unity animator stuff. 
 
