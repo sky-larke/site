@@ -37,9 +37,6 @@
     font-weight: 400;
 }
 
-.archive-entry:hover {
-    color: var(--secondary);
-}
 
 .archive-count,
 .archive-meta {
@@ -47,4 +44,5 @@
     font-size: 14px;
 }
 
-
+/* TODO: ADD HOVER EFFECTS. WHAT THE FUCK 
+    should be --secondary btw */

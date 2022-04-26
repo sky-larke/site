@@ -40,7 +40,7 @@
     width: 26px;
 }
 
-svg:hover {
+a:hover svg{
     color: var(--secondary)
 }
 
@@ -69,4 +69,8 @@ pre {
 div.highlight:hover .copy-code,
 pre:hover .copy-code {
     display: block;
+}
+
+.post-description {
+    color: var(--content);
 }

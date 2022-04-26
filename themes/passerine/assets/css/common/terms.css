@@ -21,3 +21,10 @@
     background-color: var(--primary);
     color: var(--tertiary);
 }
+.terms-tags sup {
+    color: var(--secondary);
+}
+
+a:hover sup {
+    color: var(--hl);
+}
