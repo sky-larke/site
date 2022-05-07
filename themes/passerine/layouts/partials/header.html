@@ -40,7 +40,7 @@
 {{- end }}
 
 <header class="header">
-    <nav class="nav">
+    <nav class="nav">  
         <div class="logo">
             {{- $label_text := (.Site.Params.label.text | default .Site.Title) }}
             {{- if .Site.Title }}
@@ -79,43 +79,32 @@
                 {{- $lang := .Lang}}
                 {{- $separator := or $label_text (not .Site.Params.disableThemeToggle)}}
                 {{- with $.Site.Home.AllTranslations }}
-                <ul class="lang-switch">
-                    {{- if $separator }}<li>|</li>{{ end }}
-                    {{- range . -}}
-                    {{- if ne $lang .Lang }}
-                    <li>
-                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                            {{- if (and $.Site.Params.displayFullLangName (.Language.LanguageName)) }}
-                            {{- .Language.LanguageName | emojify -}}
-                            {{- else }}
-                            {{- .Lang | title -}}
-                            {{- end -}}
-                        </a>
-                    </li>
-                    {{- end -}}
-                    {{- end}}
-                </ul>
+                
                 {{- end }}
             </span>
         </div>
         {{- $currentPage := . }}
-        <ul id="menu">
-            {{- range .Site.Menus.main }}
-            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-            {{- $page_url:= $currentPage.Permalink | absLangURL }}
-            {{- $is_search := eq ($.Site.GetPage .KeyName).Layout `search` }}
-            <li>
-                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
-                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
-                        {{- .Pre }}
-                        {{- .Name -}}
-                        {{ .Post -}}
-                    </span>
-                </a>
-            </li>
-            {{- end }}
-        </ul>
+        <!-- Hamburger-->
+        <input type="checkbox" id="hamburger-input">
+        <label id="hamburger-menu" for="hamburger-input">
+            <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        </label>
+            <ul id="menu">
+                {{- range .Site.Menus.main }}
+                {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+                {{- $page_url:= $currentPage.Permalink | absLangURL }}
+                {{- $is_search := eq ($.Site.GetPage .KeyName).Layout `search` }}
+                <li>
+                    <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                    {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                        <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                            {{- .Pre }}
+                            {{- .Name -}}
+                            {{ .Post -}}
+                        </span>
+                    </a>
+                </li>
+                {{- end }}
+            </ul>
     </nav>
 </header>

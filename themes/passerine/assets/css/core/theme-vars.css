@@ -16,6 +16,7 @@
     --code-bg: rgb(255, 255, 255);
     --border: rgb(238, 238, 238);
     --hl: #ebb5c2;
+    --overlay: var(--primary);
 
 }
 
@@ -30,6 +31,7 @@
     --code-bg: #4e496f;
     --border: #625c86;
     --hl:#de9cab;
+    --overlay: black;
 }
 
 .list {

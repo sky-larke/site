@@ -59,6 +59,23 @@ body:not(.dark) #sun {
     word-break: keep-all;
     overflow-x: auto;
     white-space: nowrap;
+    z-index: 9;
+
+    @media only screen and (max-width: 750px) {
+        position: relative;
+        top: 2rem;
+        right: 0;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        padding: 0;
+        max-height: 0;
+        width: 100%;
+        background-color: var(--theme);
+        border-top: solid 2px var(--primary);
+        border-bottom: solid 2px var(--primary);
+        transition: opacity 0.25s, max-height 0.15s linear;
+    }
 }
 
 #menu li + li {
@@ -71,37 +88,71 @@ body:not(.dark) #sun {
 
 #menu .active {
     font-weight: 600;
-    border-bottom:2px solid var(--hl);
-    
+    border-bottom:2px solid var(--hl);   
 }
 
 #menu a:hover {
     color: var(--secondary);
 }
 
-
-
-
-
-
-.lang-switch li,
-.lang-switch ul,
-.logo-switches {
-    display: inline-flex;
-    margin: auto 4px;
-}
-
-.lang-switch {
-    display: flex;
-    flex-wrap: inherit;
-}
-
-.lang-switch a {
-    margin: auto 3px;
-    font-size: 16px;
-    font-weight: 500;
-}
-
 .logo-switches {
     flex-wrap: inherit;
+}
+
+#menu li {
+    @media only screen and (max-width: 750px) {
+        float: none !important;
+        text-align: center;
+
+        a, span {
+            line-height: 5rem;
+        }
+    }
+}
+
+#menu li a {
+    @media only screen and (max-width: 750px) {
+        position: relative;
+        top: 2rem;
+        right: 0;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        padding: 0;
+        max-height: 0;
+        width: 100%;
+        background-color: var(--theme);
+        border-top: solid 2px var(--primary);
+        border-bottom: solid 2px var(--primary);
+        transition: opacity 0.25s, max-height 0.15s linear;
+    }
+}
+
+
+
+.separator {
+    @media only screen and (max-width: 750px) {
+        display: none;
+    }
+}
+
+.menu-separator {
+    @media only screen and (max-width:750px) {
+        border-top: 2px solid var(--primary);
+        margin: 0 8rem;
+        span {
+            display: none;
+        }
+    }
+}
+
+.menu-button {
+    display: none;
+    @media only screen and (max-width: 768px) {
+      position: relative;
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
+  
 }
