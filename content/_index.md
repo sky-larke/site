@@ -1,5 +1,5 @@
 ---
 author: "Erin Park"
-url: /projects
+url: /
 description: "A personal portfolio site." 
 ---
