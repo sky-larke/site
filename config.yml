@@ -91,7 +91,7 @@ params:
             - name: About
               url: about
             - name: Active
-              url: categories/ongoing
+              url: tags/overture-games
             - name: Completed
               url: categories/completed
 

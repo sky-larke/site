@@ -4,7 +4,6 @@ url: /about/
 author: Erin Park
 date: 2021-12-18
 ---
-
 <img src="self_portrait_darkhair.png" width = 200px ALIGN="left"><br><br>
 Hello, I’m Erin, an undergraduate computer science student at Northwestern University aiming to get the Segal Design Certificate. 
 

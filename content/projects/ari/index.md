@@ -3,7 +3,6 @@ title: "Arien"
 date: 2022-02-03
 categories: 
   - Project
-  - Ongoing
 tags:
   - Game Dev
   - Art
