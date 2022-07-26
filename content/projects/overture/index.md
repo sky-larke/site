@@ -1,10 +1,9 @@
 ---
-title: "Overture"
+title: "Overture Games"
 date: 2022-02-08
 categories: 
   - Project
   - Groupwork
-  - Ongoing
 tags:
   - Game Dev
   - Art
