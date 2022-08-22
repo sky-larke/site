@@ -11,6 +11,8 @@ tags:
   - Design
 draft: true
 ---
-This is my main active project right now. I'm doing visual design & project management for it. 
+This is my main active project right now. I'm doing visual design & project management for it.
+
+Accomplices include Aspen Buckingham, Mercedes Sandu, Steven Jiang, and Jack Burkhardt.
 
 Check it out at [overture.games](overture.games).
