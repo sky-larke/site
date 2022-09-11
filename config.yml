@@ -24,15 +24,12 @@ languages:
                 - name: Archive
                   url: archives
                   weight: 5
-                - name: Search
-                  url: search/
-                  weight: 10
                 - name: Tags
                   url: tags/
-                  weight: 10
+                  weight: 8
                 - name: Categories
                   url: categories/
-                  weight: 10
+                  weight: 7
 
         menu:
             main:
@@ -48,9 +45,6 @@ languages:
                 - name: Tags
                   url: tags
                   weight: 20
-                - name: Search
-                  url: search
-                  weight: 25
                
             
 
@@ -92,8 +86,8 @@ params:
               url: about
             - name: Active
               url: tags/overture-games
-            - name: Completed
-              url: categories/completed
+            - name: Art
+              url: projects/art
 
     homeInfoParams:
         Title: "Erin"

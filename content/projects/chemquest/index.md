@@ -4,13 +4,13 @@ date: 2021-06-09
 featured: true
 categories: 
   - Project
-  - Groupwork
   - Completed
 tags:
   - Game Dev
   - Art
   - Design
   - Engineering
+  - Collaboration
 thumbnail: multiportrait.png
 ---
 <img src ="lineup_large.png" alt = "Pixel art lineup of fantasy characters" width = 384>
