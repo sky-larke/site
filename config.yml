@@ -84,10 +84,10 @@ params:
         buttons:
             - name: About
               url: about
-            - name: Active
-              url: tags/overture-games
             - name: Art
               url: projects/art
+            - name: Active
+              url: tags/active
 
     homeInfoParams:
         Title: "Erin"
