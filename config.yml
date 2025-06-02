@@ -109,7 +109,7 @@ params:
     
     label:
         text: "Erin Park"
-        icon: "/favicon/personal_icon32.png"
+        icon: "favicon/personal_icon32.png"
     #     iconHeight: 35
 
     # analytics:
