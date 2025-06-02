@@ -9,6 +9,7 @@ tags:
 featured: true
 ShowToc: true
 draft: false
+description: art
 ---
 I probably started art, if you can say that, around the time most people do, in elementary school or so, drawing crude impressions of subjects that you like (I only drew cats, flowers, birds, and trees). I didn't really start taking it seriously until around 2014, when I was 12. 
 

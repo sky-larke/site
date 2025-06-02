@@ -14,6 +14,5 @@ thumbnail: ""
 
 
 I am currently working on:
-* [Ari](/ari): A visual novel about regret and acceptance.
-* [Ghost City](/ghostcity): A 2D sidescrolling platformer of a detective in a city of ghosts.
+* [Tea Tracker](/teatracker): A tracker for what teas you drink.
 

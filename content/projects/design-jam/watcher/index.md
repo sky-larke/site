@@ -1,6 +1,6 @@
 ---
 title: "Adobe Design Jam: Watcher"
-date: 2021-12-9
+date: 2021-12-09
 categories: 
   - Project
   - Groupwork

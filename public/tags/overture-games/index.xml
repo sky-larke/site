@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Overture Games on Erin Park</title>
+    <link>http://localhost:1313/tags/overture-games/</link>
+    <description>Recent content in Overture Games on Erin Park</description>
+    <image>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/overture-games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overture Games</title>
+      <link>http://localhost:1313/projects/intervallic/</link>
+      <pubDate>Sat, 18 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/intervallic/</guid>
+      <description>&lt;img src=&#34;title_not_looped.gif&#34; width = 100%&gt;
+&lt;p&gt;I previously did visual design &amp;amp; project management for it.&lt;/p&gt;
+&lt;p&gt;Accomplices include Aspen Buckingham, Mercedes Sandu, Steven Jiang, and Jack Burkhardt.&lt;/p&gt;
+&lt;p&gt;Check it out at &lt;a href=&#34;https://www.overture.games&#34;&gt;overture.games&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Jack also did a nice writeup on &lt;a href=&#34;https://jackburkhardt.com/projects/intervallic/&#34;&gt;his own site&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Songly</title>
+      <link>http://localhost:1313/projects/songly/</link>
+      <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/songly/</guid>
+      <description>&lt;img src = &#34;Songly_Promo-export.gif&#34; description = &#34;Small blob wearing a backpack yoinks a music note. Logo that reads &#39;Songly&#39; drops down from above, and then disappears. The note grows back like a plant; this gif is a loop.&#34;&gt;
+&lt;p&gt;This project was a 5 hr game jam project with 5 members, including myself and Aspen, who I am currently working on Overture Games with (partially as a result of this game jam). The game jam was hosted by NU&amp;rsquo;s PIE organization.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

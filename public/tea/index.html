@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Tea Purchase Statistics | Erin Park</title>
+<meta name="keywords" content="Data Science, Front-end, Back-end, Ruby, PostgreSQL" />
+<meta name="description" content="making facetious claims without proof on the Internet.
+
+User A
+Where did you feel that there were diminishing returns for tea? I&rsquo;ve heard it&rsquo;s at around 1$ per gram
+skylarke
+think somewhere around $1.20-$1.50 it has started feeling iffier for me
+About 10 seconds after posting that, I realized that I couldn&rsquo;t actually back it up, and that really bothered me.
+Someone could ask me &lsquo;Why?&rsquo; and all I would be able to say was &lsquo;It feels like it&rsquo;, which is terrible for credibility.
+I like winning arguments and I hate being wrong, so I left the conversation to go find out the truth
+(specifically in a way that involved data and could be easily shown to others).">
+<meta name="author" content="Erin Park">
+<link rel="canonical" href="http://localhost:1313/tea/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c8b626b13ec8c32708caa2e5a69a2b2ae478253d88074f06618c184e8b0b33b7.css" integrity="sha256-yLYmsT7IwycIyqLlpporKuR4JT2IB08GYYwYTosLM7c=" rel="preload stylesheet" as="style">
+<link rel="preload" href="/favicon/personal_icon32.png" as="image">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.555af97124d54bb1457985dd081b8f5616a48103aafeb30ac89fde835d65aa6c.js" integrity="sha256-VVr5cSTVS7FFeYXdCBuPVhakgQOq/rMKyJ/eg11lqmw="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://localhost:1313/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon/personal_icon16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon/personal_icon32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/favicon/personal_icon_apple-touch180.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.147.7">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tea/" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Tea Purchase Statistics" />
+<meta property="og:description" content="making facetious claims without proof on the Internet.
+
+User A
+Where did you feel that there were diminishing returns for tea? I&rsquo;ve heard it&rsquo;s at around 1$ per gram
+skylarke
+think somewhere around $1.20-$1.50 it has started feeling iffier for me
+About 10 seconds after posting that, I realized that I couldn&rsquo;t actually back it up, and that really bothered me.
+Someone could ask me &lsquo;Why?&rsquo; and all I would be able to say was &lsquo;It feels like it&rsquo;, which is terrible for credibility.
+I like winning arguments and I hate being wrong, so I left the conversation to go find out the truth
+(specifically in a way that involved data and could be easily shown to others)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/tea/" /><meta property="og:image" content="http://localhost:1313/papermod-cover.png"/><meta property="article:section" content="" />
+<meta property="article:published_time" content="2025-03-30T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2025-03-30T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/papermod-cover.png"/>
+
+<meta name="twitter:title" content="Tea Purchase Statistics"/>
+<meta name="twitter:description" content="making facetious claims without proof on the Internet.
+
+User A
+Where did you feel that there were diminishing returns for tea? I&rsquo;ve heard it&rsquo;s at around 1$ per gram
+skylarke
+think somewhere around $1.20-$1.50 it has started feeling iffier for me
+About 10 seconds after posting that, I realized that I couldn&rsquo;t actually back it up, and that really bothered me.
+Someone could ask me &lsquo;Why?&rsquo; and all I would be able to say was &lsquo;It feels like it&rsquo;, which is terrible for credibility.
+I like winning arguments and I hate being wrong, so I left the conversation to go find out the truth
+(specifically in a way that involved data and could be easily shown to others)."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Tea Purchase Statistics",
+      "item": "http://localhost:1313/tea/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tea Purchase Statistics",
+  "name": "Tea Purchase Statistics",
+  "description": "making facetious claims without proof on the Internet.\nUser A Where did you feel that there were diminishing returns for tea? I\u0026rsquo;ve heard it\u0026rsquo;s at around 1$ per gram\nskylarke think somewhere around $1.20-$1.50 it has started feeling iffier for me\nAbout 10 seconds after posting that, I realized that I couldn\u0026rsquo;t actually back it up, and that really bothered me. Someone could ask me \u0026lsquo;Why?\u0026rsquo; and all I would be able to say was \u0026lsquo;It feels like it\u0026rsquo;, which is terrible for credibility. I like winning arguments and I hate being wrong, so I left the conversation to go find out the truth (specifically in a way that involved data and could be easily shown to others).\n",
+  "keywords": [
+    "Data Science", "Front-end", "Back-end", "Ruby", "PostgreSQL"
+  ],
+  "articleBody": "making facetious claims without proof on the Internet.\nUser A Where did you feel that there were diminishing returns for tea? I’ve heard it’s at around 1$ per gram\nskylarke think somewhere around $1.20-$1.50 it has started feeling iffier for me\nAbout 10 seconds after posting that, I realized that I couldn’t actually back it up, and that really bothered me. Someone could ask me ‘Why?’ and all I would be able to say was ‘It feels like it’, which is terrible for credibility. I like winning arguments and I hate being wrong, so I left the conversation to go find out the truth (specifically in a way that involved data and could be easily shown to others).\n120 teas participated. I’ve taken the info from my personal notes over the past year and a half which include tea category, subtype, region, price, and more. The majority of the teas I drink are oolongs, followed by puer. Prices range from $0.11-$2.50/g, although ~75% are below $0.5/g. This doesn’t take into account how frequently I drink each tea either, if I drink 100g of Dayi 7542 and twenty 8g oolong samples, the 7542 will only show up once.\nI have some data on Notion about prices and vendors, so I took that to a google sheets table. I used monkeysort to order them, which is a website that when given a list, shows you two options at a time. You choose the winner between them. There are no ties, no rock-paper-scissors scenarios, no elements of nuance, just straight up A or B. I went off of the question of “If I had A or B, which one would I drink?”. It was very vibes-based and I might have different answers tomorrow for the same teas. I reviewed the ranking after and moved some that I felt weren’t accurate, but there’s enough data that I feel that I didn’t need to split hairs and ranks could just be close enough. This does mean that the metric is continuous and evenly distributed, which isn’t the case in reality. There’s a large delineation between ’top 5 teas ever!!’ and ‘mid’. (Some people use tier lists, but due to a different online community I’m involved with, I’m mildly allergic to them due to the feeling that often there’s little-to-no internal consistency about the criteria for each tier. If there’s multiple criteria, why not just rank them based on the criteria? Why do the tiers need to be involved?)\nI measured cost efficiency using a metric that I will be referring to as “cost-rank score”, which I calculated by adding each item’s cost Z-score (# of standard deviations from the average) and its numerical rank’s Z-score. I used Z-score so the average would be 0 and teas would be evenly distributed for my overall score. Cost was measured in $USD/g, and I used the non-discounted cost of the tea. If I couldn’t find the exact listing, I found the closest possible one, or I removed it from the data. Teas were ranked from 1-120, 1 being the best, 120 being the worst. After I added these values, I got each tea’s Z-score for cost + rank, which I used as my final value.\nI had some basic outlier checks. If the Z-score’s absolute value was greater than 3, I dropped it. Still caused some outliers.\nSome hypotheses I had:\n$1.2/g-$1.5/g is when diminishing returns begin (when it becomes less cost-efficient) ~$0.5/g is the most efficient price point for me Oolongs are the most price-efficient for me to buy Initial Results First, I began with a Google Sheets demo. These charts are generated from there. Here is the [link](https://docs.google.com/spreadsheets/d/1yZQ4RzxCBcF8WIU29-2kzYp-AzNq7K2YjRN2l3hfOj0/). Overall Oolong Puer White Green Black Initial Conclusions It was pointed out most of these lines are overfit and have lots of outliers, and I agree. This would be a very poor classifier, since it quite literally is only checking if price \u0026 rank (subjective enjoyment) are correlated. Also, the discrete ranking system I did here is rather flawed - in reality there can be ties, large gaps, etc. I simply did not see a good way of quantifying that, so I simplified it to the greatest extent. Perhaps I’m going in the wrong direction for this entirely. I want to figure out if a certain trait of a tea (price, type) correlates with my own subjective enjoyment.\nThis seems more of a classic regression problem, and it seems the data is set up perfectly for supervised learning. Also, it appears quite a few people have literal years worth of tea, wouldn’t it be helpful to predict the chance of liking a tea based upon previous experiences?\nWeb App Planning Since I have the repetitive task tolerance of a 6-year-old after five Monsters and a basket of Halloween candy, I was absolutely fed up with Google Sheets after getting this far. Formatting data manually was bad enough, making a classifier on there would be even more of a test of my patience. There will be more to this writeup - I just got caught up in actually making the app.\n������������������������������������������",
+  "wordCount" : "853",
+  "inLanguage": "en",
+  "datePublished": "2025-03-30T00:00:00Z",
+  "dateModified": "2025-03-30T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Erin Park"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/tea/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Erin Park",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Erin Park (Alt + H)">
+                <img src="http://localhost:1313/favicon/personal_icon32.png" alt="logo" aria-label="logo"
+                    height=" 30px">Erin Park</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+    <h1 class="post-title">
+      Tea Purchase Statistics
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2025-03-30 00:00:00 &#43;0000 UTC&#39;&gt;March 30, 2025&lt;/span&gt;&amp;nbsp;·&amp;nbsp;Erin Park
+
+</div>
+  </header> 
+  <div class="post-content"><p>making facetious claims without proof on the Internet.</p>
+<blockquote>
+<p><strong>User A</strong>
+Where did you feel that there were diminishing returns for tea? I&rsquo;ve heard it&rsquo;s at around 1$ per gram</p>
+<p><strong>skylarke</strong>
+think somewhere around $1.20-$1.50 it has started feeling iffier for me</p></blockquote>
+<p>About 10 seconds after posting that, I realized that I couldn&rsquo;t actually back it up, and that really bothered me.
+Someone could ask me &lsquo;Why?&rsquo; and all I would be able to say was &lsquo;It feels like it&rsquo;, which is terrible for credibility.
+I like winning arguments and I hate being wrong, so I left the conversation to go find out the truth
+(specifically in a way that involved data and could be easily shown to others).</p>
+<p>120 teas participated. I&rsquo;ve taken the info from my personal notes over the past year and a half which
+include tea category, subtype, region, price, and more.
+The majority of the teas I drink are oolongs, followed by puer.
+Prices range from $0.11-$2.50/g, although ~75% are below $0.5/g.
+This doesn&rsquo;t take into account how frequently I drink each tea either, if I drink 100g of Dayi 7542 and twenty
+8g oolong samples, the 7542 will only show up once.</p>
+<p>I have some data on Notion about prices and vendors, so I took that to a google sheets table.
+I used <a href="https://leonid-shevtsov.github.io/monkeysort/">monkeysort</a> to order them, which is a website that when given a list, shows you two options at a time.
+You choose the winner between them. There are no ties, no rock-paper-scissors scenarios,
+no elements of nuance, just straight up A or B. I went off of the question of
+&ldquo;If I had A or B, which one would I drink?&rdquo;. It was very vibes-based and I might
+have different answers tomorrow for the same teas. I reviewed the ranking after and moved
+some that I felt weren&rsquo;t accurate, but there&rsquo;s enough data that I feel that I didn&rsquo;t need
+to split hairs and ranks could just be close enough. This does mean that the metric is
+continuous and evenly distributed, which isn&rsquo;t the case in reality. There&rsquo;s a large
+delineation between &rsquo;top 5 teas ever!!&rsquo; and &lsquo;mid&rsquo;. (Some people use tier lists, but due to a
+different online community I&rsquo;m involved with, I&rsquo;m mildly allergic to them due to the feeling
+that often there&rsquo;s little-to-no internal consistency about the criteria for each tier. If there&rsquo;s
+multiple criteria, why not just rank them based on the criteria? Why do the tiers need to be involved?)</p>
+<p>I measured cost efficiency using a metric that I will be referring to as &ldquo;cost-rank score&rdquo;,
+which I calculated by adding each item&rsquo;s cost Z-score (# of standard deviations from the average)
+and its numerical rank&rsquo;s Z-score. I used Z-score so the average would be 0 and teas would be
+evenly distributed for my overall score. Cost was measured in $USD/g, and I used the
+non-discounted cost of the tea. If I couldn&rsquo;t find the exact listing, I found the closest
+possible one, or I removed it from the data. Teas were ranked from 1-120, 1 being the best,
+120 being the worst. After I added these values, I got each tea&rsquo;s Z-score for cost + rank,
+which I used as my final value.</p>
+<p>I had some basic outlier checks. If the Z-score&rsquo;s absolute value was greater than 3, I dropped it. Still caused some outliers.</p>
+<p>Some hypotheses I had:</p>
+<ul>
+<li>$1.2/g-$1.5/g is when diminishing returns begin (when it becomes less cost-efficient)</li>
+<li>~$0.5/g is the most efficient price point for me</li>
+<li>Oolongs are the most price-efficient for me to buy</li>
+</ul>
+<h2 class="h2">Initial Results</h2>
+First, I began with a Google Sheets demo. These charts are generated from there. Here is the 
+[link](https://docs.google.com/spreadsheets/d/1yZQ4RzxCBcF8WIU29-2kzYp-AzNq7K2YjRN2l3hfOj0/).
+<h3 class="h3">Overall</h3>
+<div class="flex flex-col sm:flex-row flex-wrap items-center gap-2">
+  <img src="rank-v-cost.svg" alt="graph of rank vs. cost" class="w-[1/2] h-auto">
+  <img src="rank-v-price-eff.svg" alt="graph of rank vs. price efficiency" class="w-[1/2] h-auto">
+  <img src="cost-v-price-eff.svg" alt="graph of cost vs. price efficiency" class="w-[1/2] h-auto">
+</div>
+<h3 class="h3">Oolong</h3>
+<div class="flex flex-col sm:flex-row flex-wrap items-center gap-2">
+<img src="oolong-rank-v-cost.svg" alt="graph of rank vs. cost" class="basis-1/3 h-auto">
+<img src="oolong-rank-v-price-eff.svg" alt="graph of rank vs. price efficiency" class="basis-1/3 h-auto">
+<img src="oolong-cost-v-price-eff.svg" alt="graph of cost vs. price efficiency" class="basis-1/3 h-auto">
+</div>
+<h3 class="h3">Puer</h3>
+<div class="flex flex-col sm:flex-row flex-wrap items-center gap-2">
+  <img src="puer-rank-v-cost.svg" alt="graph of rank vs. cost" class="basis-1/3 h-auto">
+<img src="puer-rank-v-price-eff.svg" alt="graph of rank vs. price efficiency" class="basis-1/3 h-auto">
+<img src="puer-cost-v-price-eff.svg" alt="graph of cost vs. price efficiency" class="basis-1/3 h-auto">
+</div>
+<h3 class="h3">White</h3>
+<div class="flex flex-col sm:flex-row flex-wrap items-center gap-2">
+  <img src="white-rank-v-cost.svg" alt="graph of rank vs. cost" class="basis-1/3 h-auto">
+<img src="white-rank-v-price-eff.svg" alt="graph of rank vs. price efficiency" class="basis-1/3 h-auto">
+<img src="white-cost-v-price-eff.svg" alt="graph of cost vs. price efficiency" class="basis-1/3 h-auto">
+</div>
+<h3 class="h3">Green</h3>
+<div class="flex flex-col sm:flex-row flex-wrap items-center gap-2">
+  <img src="green-rank-v-cost.svg" alt="graph of rank vs. cost" class="basis-1/3 h-auto">
+<img src="green-rank-v-price-eff.svg" alt="graph of rank vs. price efficiency" class="basis-1/3 h-auto">
+<img src="green-cost-v-price-eff.svg" alt="graph of cost vs. price efficiency" class="basis-1/3 h-auto">
+</div>
+<h3 class="h3">Black</h3>
+<div class="flex flex-col sm:flex-row flex-wrap items-center gap-2">
+  <img src="black-rank-v-cost.svg" alt="graph of rank vs. cost" class="basis-1/3 h-auto">
+<img src="black-rank-v-price-eff.svg" alt="graph of rank vs. price efficiency" class="basis-1/3 h-auto">
+<img src="black-cost-v-price-eff.svg" alt="graph of cost vs. price efficiency" class="basis-1/3 h-auto">
+</div>
+<h2 class="h2">Initial Conclusions</h2>
+It was pointed out most of these lines are overfit and have lots of outliers, and I agree.
+This would be a very poor classifier, since it quite literally is only checking if price & 
+rank (subjective enjoyment) are correlated. Also, the discrete ranking system I did here is 
+rather flawed - in reality there can be ties, large gaps, etc. I simply did not see a good
+way of quantifying that, so I simplified it to the greatest extent. 
+<p>Perhaps I&rsquo;m going in the wrong direction for this entirely. I want to figure out if a
+certain trait of a tea (price, type) correlates with my own subjective enjoyment.</p>
+<p>This seems more of a classic regression problem, and it seems the data is set up perfectly for supervised learning.
+Also, it appears quite a few people have literal years worth of tea, wouldn&rsquo;t it be helpful to predict
+the chance of liking a tea based upon previous experiences?</p>
+<h2 class="h2">Web App Planning</h2>
+Since I have the repetitive task tolerance of a 6-year-old after five Monsters and a basket of Halloween candy, 
+I was absolutely fed up with Google Sheets after getting this far. Formatting data manually was bad enough, 
+making a classifier on there would be even more of a test of my patience.
+<!-- Naturally, the only way forward would be a webapp that trains a regression model upon your own tea data
+and tells you what factors most affect your own personal enjoyment, complete with aesthetically appealing graphics
+and summaries. Some may say that you could simply 'employ critical thinking', but does critical thinking have 
+automation in it? -->
+<p>There will be more to this writeup - I just got caught up in actually making the app.</p>
+<!-- <h2 class="h2">Database Decisions</h2>
+So, I have to have a database for my webapp, and I'd want some way of uploading my data.
+
+There are two tables I would need
+1. User-submitted data (training data)
+2. Table with extra information with 
+
+Notion, where the original data is from is based on PostgreSQL, so I thought that was a good starting point. 
+I did consider NoSQL, but the data is highly structured, so no point. Postgres should be good enough, and lets 
+me use JSONs. I considered using a cloud provider such as AWSLambda or Supabase, but I'd like to keep this
+self contained so people can fork and deploy their own versions. 
+Okay, so I know I'm going to have my data in here, but how do I want to store it? What am I planning on doing with it?
+
+The fields of the database would vary depending on the format. 
+There are some known templates such as the one by Priestess, and there also is the MyTeaPal app, which allows for an export. 
+
+Just to have a starting point, here are the fields in my personal spreadsheet:
+* Tea name
+* Cost per gram of tea (USD$/g)
+* Vendor
+* Type (e.g. black, green...)
+    * Subtype (e.g. young sheng, dancong, although there is some debate about some categories, 
+especially about what counts as 'aged', young, etc)
+* Cultivar (e.g. )
+* Country
+* Rank
+
+Most of the info is easily obtained from my personal notes, and the current spreadsheet. But rank is harder. 
+I want to easily be able to rank a tea and shift all values accordingly as efficiently as possible.
+
+As usual the solution is a hashmap.
+
+Put all teas from database into a hashmap with their name as key. 
+Then, iterate through all csv entries
+If the entry is in the hashmap (already exists), then:
+If the entry's values are all the same as the csv, continue
+If the entry's values/rank are different, update it
+Remove the entry from the hashmap. 
+
+If the entry is not in the hashmap, add it with the current rank.
+
+After everything is done, anything left in the hashmap is a deleted/edited/duped entry and should be removed. 
+
+This goes through the database once and the csv once. Single pass? Fun. -->������������������������������������������
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/data-science/">Data Science</a></li>
+      <li><a href="http://localhost:1313/tags/front-end/">Front-End</a></li>
+      <li><a href="http://localhost:1313/tags/back-end/">Back-End</a></li>
+      <li><a href="http://localhost:1313/tags/ruby/">Ruby</a></li>
+      <li><a href="http://localhost:1313/tags/postgresql/">PostgreSQL</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="http://localhost:1313/">Erin Park</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
